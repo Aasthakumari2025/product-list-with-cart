@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --color-rose-500 :hsl(12, 20%, 44%);
+     --color-rose-900 : hsl(14, 65%, 9%);
+     --color-red :  hsl(14, 86%, 42%);
+     --color-rose-100: hsl(13, 31%, 94%);
+     --color-rose-50: hsl(20, 50%, 98%)
+
+}
