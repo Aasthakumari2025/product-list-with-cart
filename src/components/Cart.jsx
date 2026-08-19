@@ -24,7 +24,7 @@ const Cart = () => {
             cart.map((item, index) => (
               <div key={index} className='flex items-center justify-between gap-5 border-b  border-gray-300 md:py-4 py-2' >
                 <div className='md:mb-5 mb-3 '>
-                  <h3 className='md:text-lg text-base font-medium text-rose-900'>{item.name}</h3>
+                  <p className='md:text-lg text-base font-medium text-rose-900'>{item.name}</p>
                   <span className='flex gap-3 md:text-base text-sm font-medium'>
                     <p className='text-red '>{item.quantity}x</p>
                     <p className='text-rose-500 opacity-40 '>@ ${item.price}</p>

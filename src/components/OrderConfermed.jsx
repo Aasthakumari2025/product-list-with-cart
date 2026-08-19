@@ -4,10 +4,7 @@ import { CartContext } from '../context/CartContext'
 const OrderConfermed = () => {
   const { confirm, cart ,setCart ,setconfirm } = useContext(CartContext);
 
-  const totalItem = cart.reduce((total, item) =>
-    total + item.quantity
-    , 0);
-
+  
   const totalOrderPrice = cart.reduce((total, item) =>
     total + item.netPrice, 0
   )

@@ -47,7 +47,7 @@ export const CartProvider = ({ children }) => {
 
     function removeItem(name) {
         setCart((prev) => prev.filter((item) =>
-        item.name != name))
+        item.name !== name))
     }
 
     function decrement (name){
