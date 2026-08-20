@@ -25,11 +25,11 @@ const Cart = () => {
               <div key={index} className='flex items-center justify-between gap-5 border-b  border-gray-300 md:py-4 py-2' >
                 <div className='md:mb-5 mb-3 '>
                   <p className='md:text-lg text-base font-medium text-rose-900'>{item.name}</p>
-                  <span className='flex gap-3 md:text-base text-sm font-medium'>
+                  <div className='flex gap-3 md:text-base text-sm font-medium'>
                     <p className='text-red '>{item.quantity}x</p>
                     <p className='text-rose-500 opacity-40 '>@ ${item.price}</p>
                     <p className='text-rose-500 opacity-65'>${item.netPrice}</p>
-                  </span>
+                  </div>
                 </div>
 
                 <span onClick={()=> removeItem(item.name)} className='md:w-6 md:h-6 w-4 h-4 flex justify-center items-center rounded-full border-2 border-rose-500 cursor-pointer hover:border-rose-900 focus:border-rose-900'>

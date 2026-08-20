@@ -13,11 +13,11 @@ const ProductCards = () => {
               <AddtocartBtn product = {item}/>
             </div>
 
-            <span className='mt-8'>
+            <div className='mt-8'>
               <p className='text-sm text-rose-500'>{item.category}</p>
               <p className='text-lg text-rose-900 font-medium'>{item.name}</p>
               <p className='text-red text-lg font-medium'>${item.price}</p>
-            </span>
+            </div>
 
           </div>
         ))
