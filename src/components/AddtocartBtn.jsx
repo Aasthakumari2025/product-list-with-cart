@@ -3,7 +3,7 @@ import { CartContext } from '../context/CartContext';
 
 const AddtocartBtn = ({ product }) => {
 
-  const { setqty, qty, addToCart, increment, decrement, cart } = useContext(CartContext);
+  const { setqty,  addToCart, increment, decrement, cart } = useContext(CartContext);
 
   const CartItem = cart.find((item) => item.name === product.name)
   const isInCart = !!CartItem
